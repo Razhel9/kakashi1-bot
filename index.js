@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client =new Discord.Client();
 
-const token ="NDg5ODc0ODY5NTA1MzU5ODky.DoJG8w.XxtU-oosRbPHn0hmnFGWFvuAXz4NDg5ODc0ODY5NTA1MzU5ODky.DoJTNA.efWPFGQnNRtvB27IE3TXMbRag30";
+const token ="NDg5ODc0ODY5NTA1MzU5ODky.DoJTNA.efWPFGQnNRtvB27IE3TXMbRag30";
 
 client.on ("ready", () => {
     console.log ("ready!");
@@ -60,24 +60,39 @@ client.on('message', (message) => {
 	var rand2 = Math.round(Math.random()*3)
 	switch (rand2) {
 
-		case 0: rand2=("https://i.imgur.com/FoHPk21.gif"); 
+		case 0: rand2=({files :["./image/cry1.gif"]});
 		
 		break;
 
 		case 1:
-       		        rand2=("https://i.imgur.com/ZcSy6qT.gif");
+       		        rand2=({files :["./image/cry2.gif"]});
        		        
  		break;
 					
 		case 2:
-       		        rand2=("https://i.imgur.com/9qDl6iv.gif");
+       		        rand2=({files :["./image/cry3.gif"]});
        		        
  		break;
 			
 		case 3:
-       		        rand2=("https://i.imgur.com/WUkVXoU.gif");
+       		        rand2=({files :["./image/cry4.gif"]});
        		        
- 		break;
+		break;
+		 
+		case 4:
+       		        rand2=({files :["./image/cry5.gif"]});
+       		        
+		break;
+		 
+		case 5:
+		 			rand2=({files :["./image/cry6.gif"]});
+		 
+		break;
+
+		case 6:
+		 			rand2=({files :["./image/cry7.gif"]});
+		 
+		break;
 			}
 	message.channel.send(rand2);
 	}
@@ -247,5 +262,6 @@ client.on('message', (message) => {
 		message.channel.send(rand7);
 	}
 	});
+
 
 client.login (process.env.token);
