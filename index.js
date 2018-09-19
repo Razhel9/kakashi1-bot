@@ -264,4 +264,4 @@ client.on('message', (message) => {
 	});
 
 
-client.login (NDg5ODc0ODY5NTA1MzU5ODky.DoJTNA.efWPFGQnNRtvB27IE3TXMbRag30);
+client.login (NDg5ODc0ODY5NTA1MzU5ODky.DoJTNA.efWPFGQnNRtvB27IE3TXMbRag30); ntr di github uba ke (process.env.CLIENT_TOKEN)
